@@ -55,5 +55,5 @@ done
 echo "La palabra mas larga es $palabralarga y tiene $longestW caracteres"
 echo "La palabra mas corta es $palabracorta y tiene $shortestW caracteres"
 
-
+rm texts/script1
 
