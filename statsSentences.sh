@@ -14,17 +14,17 @@ do
 done
 
 #Recorrer el archivo por línea hasta el final
-while read -r line; 
+while read -r line;
 do
     if [[ "${#line}" -gt "${#longestS}" ]]
     then
       longestS=$line
       longCont=$(echo -n $line | wc -c)
     fi
-        
+
 done < texts/script4
 
-shortestS=${#longestS}
+shortestS=$longestS
 
 while read -r line;
 do
@@ -36,8 +36,11 @@ do
 
 done < texts/script4
 
+suma=$(expr $shortCont + $longCont)
+prom=$(echo $suma / 2 | bc -l)
+
 echo "LA ORACIÓN MAS LARGA ES: $longestS Y TIENE $longCont CARACTERES"
-echo "LA ORACION MAS CORTA ES: $shortestS Y TIENE $shortCont"
+echo "LA ORACION MAS CORTA ES: $shortestS Y TIENE $shortCont CARACTERES"
+echo "EL PROMEDIO ES $prom"
 
 rm texts/script4
-
