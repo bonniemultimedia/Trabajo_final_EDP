@@ -59,3 +59,4 @@ echo "El promedio es: $prom"
 
 rm texts/script1
 
+
