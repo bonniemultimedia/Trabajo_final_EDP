@@ -3,10 +3,6 @@ Alumna: María Florencia Gómez
 Materia: Entorno de Programación
 Carrera: TUIA
 
-**Contenido**
-
-[TOC]
-
 # Menú
 Menú de mini aplicaciones (scripts de bash ) para análisis de texto
 ## Script 1 - statsWords
@@ -25,4 +21,15 @@ promedio de longitud).
 Contador de líneas en blanco. 
 # Docker File
 # Ejecución de la Aplicación
+**Instalar Docker en tu SO**
+https://docs.docker.com/engine/install/ubuntu/
+
+**Clonar el respositorio**
+`git clone https://github.com/bonniemultimedia/Trabajo_final_EDP.git`
+
+**Ir a la carpeta Generada y Crear la imagen**
+`sudo docker build –tag edp_tf .`
+
+**Ejecutar el contendor con la imagen creada.**
+`sudo docker run -it –rm edp_tf`
 
