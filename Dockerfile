@@ -14,6 +14,8 @@ ADD [ "statsUseWords.sh", "/usr/src/" ]
 
 ADD [ "statsWords.sh", "/usr/src/" ]
 
+ADD [ "texts", "/usr/src" ]
+
 WORKDIR /usr/src/
 
 ENTRYPOINT [ "./menu.sh" ]
